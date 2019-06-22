@@ -109,7 +109,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="hive,">
 
 
 
@@ -120,17 +120,20 @@
 
 
 
-<meta name="description" content="联系方式Email: dxying1991@163.comGitHub: https://github.com/DianaDai 基本信息 目前所在城市：南京 个人简介后端工程师">
-<meta property="og:type" content="website">
-<meta property="og:title" content="个人介绍">
-<meta property="og:url" content="https://dianadai.github.io/about/index.html">
+<meta name="description" content="为什么使用 Hive直接使用 MapReduce 所面临的问题： 人员学习成本太高 项目周期要求太短 MapReduce实现复杂查询逻辑开发难度太大  为什么要使用 Hive：  更友好的接口：操作接口采用类 SQL 的语法，提供快速开发的能力 更低的学习成本：避免了写 MapReduce，减少开发人员的学习成本 更好的扩展性：可自由扩展集群规模而无需重启服务，还支持用户自定义函数Hive 特点优">
+<meta name="keywords" content="hive">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hive架构">
+<meta property="og:url" content="https://dianadai.github.io/2019/02/18/1/index.html">
 <meta property="og:site_name" content="Diana&#39;s Blog">
-<meta property="og:description" content="联系方式Email: dxying1991@163.comGitHub: https://github.com/DianaDai 基本信息 目前所在城市：南京 个人简介后端工程师">
+<meta property="og:description" content="为什么使用 Hive直接使用 MapReduce 所面临的问题： 人员学习成本太高 项目周期要求太短 MapReduce实现复杂查询逻辑开发难度太大  为什么要使用 Hive：  更友好的接口：操作接口采用类 SQL 的语法，提供快速开发的能力 更低的学习成本：避免了写 MapReduce，减少开发人员的学习成本 更好的扩展性：可自由扩展集群规模而无需重启服务，还支持用户自定义函数Hive 特点优">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-12T09:26:23.814Z">
+<meta property="og:image" content="https://dianadai.github.io/2019/02/18/images/hive架构.png">
+<meta property="og:updated_time" content="2019-02-22T13:48:32.338Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个人介绍">
-<meta name="twitter:description" content="联系方式Email: dxying1991@163.comGitHub: https://github.com/DianaDai 基本信息 目前所在城市：南京 个人简介后端工程师">
+<meta name="twitter:title" content="Hive架构">
+<meta name="twitter:description" content="为什么使用 Hive直接使用 MapReduce 所面临的问题： 人员学习成本太高 项目周期要求太短 MapReduce实现复杂查询逻辑开发难度太大  为什么要使用 Hive：  更友好的接口：操作接口采用类 SQL 的语法，提供快速开发的能力 更低的学习成本：避免了写 MapReduce，减少开发人员的学习成本 更好的扩展性：可自由扩展集群规模而无需重启服务，还支持用户自定义函数Hive 特点优">
+<meta name="twitter:image" content="https://dianadai.github.io/2019/02/18/images/hive架构.png">
 
 
 
@@ -160,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="https://dianadai.github.io/about/">
+  <link rel="canonical" href="https://dianadai.github.io/2019/02/18/1/">
 
 
 
 
 
-  <title>个人介绍 | Diana's Blog</title>
+  <title>Hive架构 | Diana's Blog</title>
   
 
 
@@ -323,44 +326,277 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+ 
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dianadai.github.io/2019/02/18/1/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Diana Dai">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/avatar/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Diana's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">个人介绍</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><p>Email: <a href="mailto:dxying1991@163.com" target="_blank" rel="noopener">dxying1991@163.com</a><br>GitHub: <a href="https://github.com/DianaDai" target="_blank" rel="noopener">https://github.com/DianaDai</a></p>
-<h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><!-- 学历：本科 -->
-<p>目前所在城市：南京</p>
-<h1 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h1><p>后端工程师<br><!-- 喜欢node.js、mongoDB、、JAVA、Redis、Docker、Linux等后端、数据库技术 --></p>
-<!--
-# 技能清单
-后端语言：Java/C#
-前端框架：jQuery/Bootstrap/AngularJS/
-数据库相关：MySQL/SQL Server/Redis/
-版本管理、文档和自动化部署工具：Svn/Git
-
--->
+          <h1 class="post-title" itemprop="name headline">Hive架构</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-18T11:36:30+08:00">
+                2019-02-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/hive/" itemprop="url" rel="index">
+                    <span itemprop="name">hive</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2019/02/18/1/" class="leancloud_visitors" data-flag-title="Hive架构">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count">℃</span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">热度
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>℃
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  946
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="为什么使用-Hive"><a href="#为什么使用-Hive" class="headerlink" title="为什么使用 Hive"></a>为什么使用 Hive</h3><h4 id="直接使用-MapReduce-所面临的问题："><a href="#直接使用-MapReduce-所面临的问题：" class="headerlink" title="直接使用 MapReduce 所面临的问题："></a>直接使用 MapReduce 所面临的问题：</h4><ol>
+<li>人员学习成本太高</li>
+<li>项目周期要求太短</li>
+<li>MapReduce实现复杂查询逻辑开发难度太大</li>
+</ol>
+<p>为什么要使用 Hive：</p>
+<ol>
+<li>更友好的接口：操作接口采用类 SQL 的语法，提供快速开发的能力</li>
+<li>更低的学习成本：避免了写 MapReduce，减少开发人员的学习成本</li>
+<li>更好的扩展性：可自由扩展集群规模而无需重启服务，还支持用户自定义函数<h3 id="Hive-特点"><a href="#Hive-特点" class="headerlink" title="Hive 特点"></a>Hive 特点</h3>优点：</li>
+<li><p>可扩展性,横向扩展，Hive 可以自由的扩展集群的规模，一般情况下不需要重启服务 横向扩展：通过分担压力的方式扩展集群的规模 纵向扩展：一台服务器cpu i7-6700k 4核心8线程，8核心16线程，内存64G =&gt; 128G</p>
+</li>
+<li><p>延展性，Hive 支持自定义函数，用户可以根据自己的需求来实现自己的函数</p>
+</li>
+<li>良好的容错性，可以保障即使有节点出现问题，SQL 语句仍可完成执行</li>
+</ol>
+<p>缺点：</p>
+<ol>
+<li><p>Hive 不支持记录级别的增删改操作，但是用户可以通过查询生成新表或者将查询结 果导入到文件中（当前选择的 hive-2.3.2 的版本支持记录级别的插入操作）</p>
+</li>
+<li><p>Hive 的查询延时很严重，因为 MapReduce Job 的启动过程消耗很长时间，所以不能 用在交互查询系统中。</p>
+</li>
+<li><p>Hive 不支持事务（因为不没有增删改，所以主要用来做 OLAP（联机分析处理），而 不是 OLTP（联机事务处理），这就是数据处理的两大级别）。</p>
+<h3 id="Hive的架构"><a href="#Hive的架构" class="headerlink" title="Hive的架构"></a>Hive的架构</h3><p><img src="../images/hive架构.png" alt="" title="描述"></p>
+</li>
+</ol>
+<p>hive的架构中有四个部分组成：<br>   用户接口：<br>    - CLI（command line interface），shell终端命令行，采用交互式使用hive命令行与hive进行交互，最常用（学习、生成、调试）<br>    - Jdbc/odbc：是hive的基于jdbc操作提供的客户端，用户（开发、运维）通过这个链接hive server服务<br>    - Web UI：通过浏览器访问hive（基本不用）<br>   Thrift Server：Thrift是facebook开发的一个软件框架，可以用来进行可扩展且跨语言的服务的开发，hive集成了该服务，能让不同的编程语言调用hive的接口。<br>   底层四大组件：底层的四大组件完成hql查询语句从词法分析，语法分析，编译，优化，以及生成逻辑执行计划的生成。生成的逻辑执行计划存储在hdfs中，并随后由MapReduce调用执行。<br>    - 解释器：解释器的作用是将hiveSQL语句转换成抽象语法数<br>    - 编译器：编译器是将语法树编译成为逻辑执行计划<br>    - 优化器：优化器是对逻辑执行计划进行优化<br>    - 执行器：执行时调用底层的运行框架执行逻辑执行计划<br>执行流程就是：hiveQL，通过命令或者客户端提交，经过compiler编译器，运用metastore中的元数据进行类型检测和语法分析，生成一个逻辑方案，然后通过的优化处理，产生一个maptask程序。<br>   元数据库 ：就是存储在hive中的数据的描述信息，通常包括：表的名字、表的列和分区以及其属性、表的属性（内部表和外部表），表的数据所在目录。而hive有两种元数据的存储方案：<br>    - Metastore默认存储在自带的derby数据库中。缺点是：不适合多用户操作，并且数据存储目录不固定。数据库跟着hive的进入目录走，极度不方便管理。<br>    - Hive和mysql之间通过Metastore服务交互（本地或者远程）</p>
+
       
     </div>
     
     
     
+
+	
+	
+    
+	
+    
+      <div>
+        <blockquote class="blockquote-center" style="color: #ccc;">
+    -------------本文结束 <i class="fa fa-apple"></i> 感谢您的阅读-------------
+</blockquote>
+<div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/reward/reward_wechat.png" alt="Diana Dai 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/reward/reward_alipay.png" alt="Diana Dai 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hive/" rel="tag"># hive</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/15/hive 安装/" rel="next" title="hive安装">
+                <i class="fa fa-chevron-left"></i> hive安装
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/22/1/" rel="prev" title="Hive 命令行">
+                Hive 命令行 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -369,6 +605,17 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
 
         </div>
         
@@ -511,7 +758,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#联系方式"><span class="nav-number">1.</span> <span class="nav-text">联系方式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本信息"><span class="nav-number">2.</span> <span class="nav-text">基本信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#个人简介"><span class="nav-number">3.</span> <span class="nav-text">个人简介</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么使用-Hive"><span class="nav-number">1.</span> <span class="nav-text">为什么使用 Hive</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#直接使用-MapReduce-所面临的问题："><span class="nav-number">1.1.</span> <span class="nav-text">直接使用 MapReduce 所面临的问题：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hive-特点"><span class="nav-number">2.</span> <span class="nav-text">Hive 特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hive的架构"><span class="nav-number">3.</span> <span class="nav-text">Hive的架构</span></a></li></ol></div>
             
 
           </div>
@@ -732,6 +979,28 @@
 
     
 
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitment({
+            id: '1550460990000', 
+            owner: 'DianaDai',
+            repo: 'gitment',
+            
+            oauth: {
+            
+            
+                client_secret: 'f803b81e130353883978ede233a8a39b81aed77f',
+            
+                client_id: 'b9bf0bc629e1ebe5b317'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
     
 
 
